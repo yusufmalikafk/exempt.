@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="introduction-screen">
+        <div class="logo-container">
+            <div class="logo"></div>
+        </div>
+        <h1>Ready to set on this healing journey?</h1>
+        <button class="heal-now-button" onclick="startJourney()">HEAL NOW</button>
+    </div>
+
+    <div class="ai-assistant" id="ai-assistant">
+        <div class="ai-content">
+            <h2>Hi, I'm Mo, your AI assistant!</h2>
+            <p>I'll help you find the right therapist.</p>
+            <button onclick="showTherapists()">Show Therapists</button>
+        </div>
+    </div>
+
+    <div class="therapist-selection" id="therapist-selection">
+        <h2>Select a Therapist</h2>
+        <div class="therapist-card">
+            <h3>Therapist 1</h3>
+            <p>Price: $50/session</p>
+            <button onclick="startChat('Therapist 1')">Chat</button>
+            <button onclick="startCall('Therapist 1')">Call</button>
+        </div>
+        <div class="therapist-card">
+            <h3>Therapist 2</h3>
+            <p>Price: $70/session</p>
+            <button onclick="startChat('Therapist 2')">Chat</button>
+            <button onclick="startCall('Therapist 2')">Call</button>
+        </div>
+        <button onclick="startPostTherapy()">Continue to Post-Therapy Course</button>
+    </div>
+
+    <div class="post-therapy" id="post-therapy">
+        <h2>Post-Therapy Course</h2>
+        <p>Course content goes here...</p>
+        <button onclick="joinCommunity()">Join Community</button>
+    </div>
+
+    <div class="community" id="community">
+        <h2>Welcome to the Community</h2>
+        <p>Community content goes here...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
